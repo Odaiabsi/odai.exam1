@@ -1,0 +1,191 @@
+body {
+    background-color:white ;
+    font-size:16px;
+    
+    
+}
+
+.container {
+    display: flex;
+    position:relative;
+    left:0;
+}
+
+.box {
+    position: relative;
+    border: 3px solid black;
+    height: 150px;
+    padding: 10px;
+    cursor:pointer;
+    transition:ease-in;
+    
+}
+
+.box:hover {
+        background-color: red;
+    }
+
+.box1 {
+   
+    background-color:darkgray;
+    margin-left:32px;
+    
+   
+}
+
+.box2 {
+    background-color: darkgray;
+   
+}
+
+.box3 {
+    
+    background-color: darkgray;
+    margin-right: 32px;
+    
+    
+}
+
+
+
+.price {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 40px;
+    height: 15px;
+    padding-bottom: 8px;
+    text-align: left;
+    border: 1px solid black;
+    font-size: 1.25em;
+    margin-left:5px;
+    background-color:deeppink;
+    
+}
+
+
+.subtitle {
+    position: absolute;
+    top:0px;
+    right: 0px;
+    width: 30%;
+    height: 15px;
+    padding-bottom: 8px;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 1.25em;
+    border-radius:10px;
+}
+.subtitle1 {
+  background-color: red;
+  color:white;
+}
+
+.subtitle2 {
+    
+    background-color: blue;
+    color:orangered;
+    
+}
+
+.subtitle3 {
+    
+    background-color: green;
+    color:red
+    
+}
+
+
+
+.basic {
+    position:relative;
+    font-size : 1em;
+    text-align:left;
+    margin-top:18px;
+    overflow:hidden
+}
+.h1 {
+    position: relative;
+    color: black;
+    font-family: 'Agency FB';
+    font-size: 1.75em;
+    text-align: center;
+    margin-top: 8%;
+    font-weight: bold;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        
+    }
+
+    .box {
+        width: 30%;
+        margin-top: 7%;
+   
+    }
+
+    .subtitle {
+       
+    }
+}
+
+
+@media screen and (min-width: 850px) and (max-width: 1199px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: left ;
+    }
+
+    .box1 {
+        flex: 1;
+        margin-top: 10px;
+        margin-left:10px;
+    }
+    .box2 {
+        flex: 1;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    .box3{
+        width : calc(100% - 20px);
+        margin-top:10px;
+        margin-left:10px;
+        margin-right:10px;
+    }
+    
+    .subtitle1  {
+        width:30%;
+    }
+
+    .subtitle2{
+        width: 30%;
+    }
+
+    .subtitle3{
+        width: 13%;
+    }
+}
+
+
+@media screen and (max-width: 849px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 80%;
+        margin: 10px 0;
+        height:96px;
+    }
+
+    .subtitle {
+        
+        
+    }
+}
+
